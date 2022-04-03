@@ -33,7 +33,7 @@
    
 }
 
-button {
+/* button {
     margin:auto;
     margin-left: 370px;
     padding: 5px 10px;
@@ -46,11 +46,25 @@ button {
     border-radius: 7px;
     cursor: pointer;
     font-size: 15px;
-}
+} */
 
 select {
     width: 240px;
     font-size: 17px;
     padding: 5px 10px;
      border-radius: 7px; 
+}
+#paymentbutton{
+    margin:auto;
+    margin-left: 370px;
+    padding: 5px 10px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #111111;
+    color:white;
+    border: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
 }

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address</title>
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
     <link rel="stylesheet" href="/styles/address.css">
     <link rel="stylesheet" href="/styles/navbar.css">
     <style>
@@ -14,11 +17,11 @@
             margin: auto;
             margin-top: 50px;
             width: 900px;
-            height:500px;
+            height: 500px;
             align-items: center;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             background-color: #37857e;
-            
+
         }
 
         #address {
@@ -40,7 +43,7 @@
 
 
 
-        
+
         <div id="address">
             <h1>Address</h1>
         </div>
@@ -78,7 +81,7 @@
 
                 </div>
             </div>
-            <button>Move to Payment</button>
+            <button id="paymentbutton">Move to Payment</button>
         </form>
 </body>
 
@@ -109,16 +112,16 @@
                 this.altnumber = altnumber
         }
 
-        if (email != "" && name != "" && mobileno != "" && city != "" && address != "" && pincode != "" && landmark != "" && altnumber != "" ) {
-            if(mobileno.length==10 ){
+        if (email != "" && name != "" && mobileno != "" && city != "" && address != "" && pincode != "" && landmark != "" && altnumber != "") {
+            if (mobileno.length == 10) {
                 alert("Your address details are filled Successfully")
                 window.location.href = "/html/payment.html"
             }
-            else{
-            let completeaddress = new addressdetails(name, email, mobileno, city, address, pincode, landmark, altnumber)
-            alert("Mobile Number must be 10 digits")
+            else {
+                let completeaddress = new addressdetails(name, email, mobileno, city, address, pincode, landmark, altnumber)
+                alert("Mobile Number must be 10 digits")
             }
-            
+
         }
         else {
             alert("Fill all the details must be required")
